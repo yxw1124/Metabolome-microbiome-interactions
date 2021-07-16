@@ -3,9 +3,9 @@ rm(list = ls())
 library(phyloseq)
 library(tidyverse)
 load("physeq_ccrc_pruned_clr.Rdata")
-sample_lookup_table <- read.table("~/Desktop/Data/MetadataCodesCRC.txt", header = TRUE,
+sample_lookup_table <- read.table("Data/MetadataCodesCRC.txt", header = TRUE,
                                   colClasses = "character")
-Metabolomics <- read.table(file = "~/Desktop/Data/CRCMetabolomics_CleanedLogTransformed.txt", sep = "\t", 
+Metabolomics <- read.table(file = "Data/CRCMetabolomics_CleanedLogTransformed.txt", sep = "\t", 
                            skip = 0, header = TRUE, comment.char = "", check.names = FALSE, row.names = 1)
 
 otu <- otu_table(physeq_ccrc_pruned_clr)
@@ -32,10 +32,9 @@ X_omics <- apply(X_omics,2,as.numeric)
 row.names(X_omics) <- row.names(omics)
 Y_omics <- omics$GROUP
 Y_omics <- as.factor(Y_omics)
-save(X_omics,Y_omics,file = "~/Desktop/RData/Omics_genus.RData")
+save(X_omics,Y_omics,file = "Omics_genus.RData")
 
 ##add class
-load("~/Desktop/RData/Omics_genus.RData")
 X_omics <- as.data.frame(X_omics)
 Y_omics <- as.data.frame(Y_omics)
 X_omics$Class <- Y_omics
