@@ -60,8 +60,8 @@ plot(1:0, xlim=c(0,1), ylim=c(0.5,1), col = "white",
 for (iter in 1:5){
   # performance on test set
   cat(paste('iter = ', iter, ':: '))
-  pred <- prediction(as.numeric(irf[[18]]$rf.list[[iter]]$test$votes[,2]), 
-                     Y_omics[-X[[18]]$in_id])
+  pred <- prediction(as.numeric(irf[[11]]$rf.list[[iter]]$test$votes[,2]), 
+                     Y_omics[-X[[11]]$in_id])
   perf <- performance(pred,"prec","rec")
   lines(as.numeric(unlist(perf@x.values)), as.numeric(unlist(perf@y.values)), 
         type='l',col=iter,lwd=2)
