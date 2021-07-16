@@ -39,7 +39,7 @@ X_omics <- as.data.frame(X_omics)
 Y_omics <- as.data.frame(Y_omics)
 X_omics$Class <- Y_omics
 omics <- as.matrix(X_omics)
-save(omics,file = "~/Desktop/Rdata/omics_genus_Class.Rdata")
+save(omics,file = "omics_genus_Class.Rdata")
 
 
 
