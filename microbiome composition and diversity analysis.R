@@ -25,7 +25,7 @@ p_group1 <- plot_composition(pseq.genusrel, average_by = "Class", otu.sort = "ab
   labs(fill = "Genus")+
   scale_y_continuous(labels=scales::percent)+
   labs(x = "Class", y = "Relative abundance")
-ggsave(p_group1, filename = "~/Desktop/Relative abundance of genus level with group.png", width=6, height=7)
+ggsave(p_group1, filename = "Relative abundance of genus level with group.png", width=6, height=7)
 
 # get relative abudance-Phylum level
 # Averaged by group
@@ -84,7 +84,7 @@ p1 <- plot_ordination(physeq_ccrc_pruned, PCoA_1, aes(Axis.1, Axis.2), color="Cl
         plot.title = element_text(size = 14), 
         legend.title=element_text(size = 14),legend.text = element_text(size = 14))+
   theme_bw()
-ggsave(p1, filename = "~/Desktop/PCoA on Bray-Curtis distance.png", width=8, height=6)
+ggsave(p1, filename = "PCoA on Bray-Curtis distance.png", width=8, height=6)
 
 ##Canberra distance
 PCoA_2 <- ordinate(physeq_ccrc_pruned, "PCoA", "canberra")
@@ -96,6 +96,6 @@ p2 <- plot_ordination(physeq_ccrc_pruned, PCoA_2, aes(Axis.1, Axis.2), color="Cl
         plot.title = element_text(size = 14), 
         legend.title=element_text(size = 14),legend.text = element_text(size = 14))+ 
   theme_bw()
-ggsave(p2, filename = "~/Desktop/PCoA on Canberra distance.png", width=8, height=6)
+ggsave(p2, filename = "PCoA on Canberra distance.png", width=8, height=6)
 
 
