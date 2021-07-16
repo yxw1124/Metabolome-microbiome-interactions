@@ -34,7 +34,7 @@ p1 <- ggplot(pd_omics_crc1, aes(x = pd_omics_crc1[,1], y = pd_omics_crc1[,2],
   scale_fill_distiller(name = "Centered log odds", palette = "RdYlBu") +
   theme_bw() +
   ggtitle("ChoE(20:4)_Streptococcus")
-ggsave(p1, filename = "~/Desktop/Partial dependence_Streptococcus.png", 
+ggsave(p1, filename = "Partial dependence_Streptococcus.png", 
        width=8, height=6)
 
 #ChoE(20:4)_SM(d18:1/24:1) + SM(d18:2/24:0)
@@ -51,7 +51,7 @@ p2 <- ggplot(pd_omics_crc2, aes(x = pd_omics_crc2[,1], y = pd_omics_crc2[,2],
   theme_bw()+
   ggtitle("ChoE(20:4)_SM(d18:1/24:1) + SM(d18:2/24:0)") 
 
-ggsave(p2, filename = "~/Desktop/Partial dependence_SM.png", 
+ggsave(p2, filename = "Partial dependence_SM.png", 
        width=8, height=6)
 
 #ChoE(20:4)_SM(42:3)
@@ -66,7 +66,7 @@ p3 <- ggplot(pd_omics_crc3, aes(x = pd_omics_crc3[,1], y = pd_omics_crc3[,2],
   scale_fill_distiller(name = "Centered log odds", palette = "RdYlBu") +
   theme_bw() +
   ggtitle("ChoE(20:4)_SM(42:3)")
-ggsave(p3, filename = "~/Desktop/Partial dependence_SM42.png", 
+ggsave(p3, filename = "Partial dependence_SM42.png", 
        width=8, height=6)
 
 #ChoE(20:4)_PE(16:0/18:2)
@@ -81,7 +81,7 @@ p4 <- ggplot(pd_omics_crc4, aes(x = pd_omics_crc4[,1], y = pd_omics_crc4[,2],
   scale_fill_distiller(name = "Centered log odds", palette = "RdYlBu") +
   theme_bw() +
   ggtitle("ChoE(20:4)_PE(16:0/18:2)")
-ggsave(p4, filename = "~/Desktop/Partial dependence_PE2.png", 
+ggsave(p4, filename = "Partial dependence_PE2.png", 
        width=8, height=6)
 
 #ChoE(20:4)_PE(16:0/18:1)
@@ -96,7 +96,7 @@ p5 <- ggplot(pd_omics_crc5, aes(x = pd_omics_crc5[,1], y = pd_omics_crc5[,2],
   scale_fill_distiller(name = "Centered log odds", palette = "RdYlBu") +
   theme_bw() +
   ggtitle("ChoE(20:4)_PE(16:0/18:1)")
-ggsave(p5, filename = "~/Desktop/Partial dependence_PE1.png", 
+ggsave(p5, filename = "Partial dependence_PE1.png", 
        width=8, height=6)
 
 #ChoE(20:4)_PC(32:1)
@@ -111,7 +111,7 @@ p6 <- ggplot(pd_omics_crc6, aes(x = pd_omics_crc6[,1], y = pd_omics_crc6[,2],
   scale_fill_distiller(name = "Centered log odds", palette = "RdYlBu") +
   theme_bw()+
   ggtitle("ChoE(20:4)_PC(32:1)") 
-ggsave(p6, filename = "~/Desktop/Partial dependence_PC.png", 
+ggsave(p6, filename = "Partial dependence_PC.png", 
        width=8, height=6)
 
 #ChoE(20:4)_Blautia
@@ -127,7 +127,7 @@ p7 <- ggplot(pd_omics_crc7, aes(x = pd_omics_crc7[,1], y = pd_omics_crc7[,2],
   scale_fill_distiller(name = "Centered log odds", palette = "RdYlBu") +
   theme_bw() +
   ggtitle("ChoE(20:4)_Blautia")
-ggsave(p7, filename = "~/Desktop/Partial dependence_Blautia.png", 
+ggsave(p7, filename = "Partial dependence_Blautia.png", 
        width=8, height=6)
 
 
